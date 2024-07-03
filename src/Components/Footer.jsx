@@ -22,7 +22,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
  */
 
 const Footer = (props) => {
-  const { email, gitHub, instagram, linkedIn, name, primaryColor } = props;
+  const { gitHub, instagram, linkedIn, name, primaryColor } = props;
 
   return (
     <div
@@ -44,12 +44,6 @@ const Footer = (props) => {
           gap: "2.5rem",
         }}
       >
-        {email && (
-          <a href="vilishalobo1704@gmail.com">
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
-          </a>
-        )}
-
         {gitHub && (
           <a href={`https://github.com/vilishalobo`} target="_blank" rel="noopener noreferrer">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
